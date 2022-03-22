@@ -51,7 +51,6 @@ class MainActivity : AppCompatActivity() {
 //        }
         navBar.setOnItemSelectedListener {
             when(it.itemId){
-
                 R.id.home -> makeCurrentFragment(HomeFragment())
                 R.id.saved -> makeCurrentFragment(SavedFragment())
             }

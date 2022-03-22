@@ -4,10 +4,14 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity(tableName="news_table")
-data class News(
+ class News(
+
+    var title : String,
+    var description: String,
+    var urlToImage : String
+){
+
     @PrimaryKey(autoGenerate = true)
-    val id : Int,
-    val title : String,
-    val description: String,
-    val urlToImage : String
-)
+     var id:Int=0
+ }
+
