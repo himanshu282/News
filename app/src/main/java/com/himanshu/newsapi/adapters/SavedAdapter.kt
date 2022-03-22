@@ -37,10 +37,6 @@ class SavedAdapter(val context : Context, val interfacess : ClickInterface,var n
         holder.description.text = currentItem.description
         holder.urlToImage.load(currentItem.urlToImage)
         holder.deleteButton.setOnClickListener{
-            var articles=Articles()
-            articles.title =currentItem.title
-            articles.description=currentItem.description
-            articles.urlToImage=currentItem.urlToImage
             interfacess.onClick(currentItem)
         }
     }
